@@ -1,0 +1,24 @@
+package com.DAO;
+
+import java.sql.Connection;
+
+import com.entity.Cart;
+
+public class CartDAOImpl implements CartDAO {
+
+	private Connection conn;
+	
+	public CartDAOImpl(Connection conn) {
+		
+		this.conn=conn;
+		
+	}
+	
+	@Override
+	public boolean addCart(Cart c) {
+		
+		return false;
+	}
+	
+
+}

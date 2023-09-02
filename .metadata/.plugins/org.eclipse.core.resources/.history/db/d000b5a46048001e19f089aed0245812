@@ -1,0 +1,37 @@
+package com.DAO;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
+public class BookOrderImpl implements BookOrderDAO {
+
+	private Connection conn;
+
+	public BookOrderImpl(Connection conn) {
+		super();
+		this.conn = conn;
+	}
+
+	@Override
+	public int getOrderNo() {
+		
+		int i=0;
+		try {
+			
+			String sql="select * from book_order";
+			PreparedStatement ps=conn.prepareStatement(sql);
+			ResultSet rs=ps.executeQuery();
+			while (rs.next())
+			{
+								
+			}
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		return 0;
+	}
+			
+}

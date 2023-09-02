@@ -1,0 +1,8 @@
+package com.user.servlet;
+
+import javax.servlet.annotation.WebServlet;
+
+@WebServlet("/serchBook")
+public class SearchBookServlet {
+
+}

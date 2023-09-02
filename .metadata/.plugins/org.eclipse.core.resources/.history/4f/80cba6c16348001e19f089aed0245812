@@ -1,0 +1,11 @@
+package com.DAO;
+
+import com.entity.Book_Order;
+
+public interface BookOrderDAO {
+	
+	public int getOrderNo();
+	
+	public boolean saveOrder(Book_Order blist);
+
+}

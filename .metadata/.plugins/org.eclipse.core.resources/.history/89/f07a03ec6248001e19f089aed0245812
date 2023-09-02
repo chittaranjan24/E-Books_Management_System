@@ -1,0 +1,57 @@
+package com.DAO;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
+import com.entity.Book_Order;
+
+public class BookOrderImpl implements BookOrderDAO {
+
+	private Connection conn;
+
+	public BookOrderImpl(Connection conn) {
+		super();
+		this.conn = conn;
+	}
+
+	@Override
+	public int getOrderNo() {
+		
+		int i=1;
+		try {
+			
+			String sql="select * from book_order";
+			PreparedStatement ps=conn.prepareStatement(sql);
+			ResultSet rs=ps.executeQuery();
+			while (rs.next())
+			{
+				i++;				
+			}
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		return i;
+	}
+
+	@Override
+	public boolean saveOrder(Book_Order b) {
+		boolean f=false;
+		
+		try {
+			
+			String sql="insert into book_order(order_id,user_name,email,address,phno,book_name,author,price,payment) values(?,?,?,?,?,?,?,?,?)";
+			
+			conn.setAutoCommit(false);
+			PreparedStatement ps=conn.prepareStatement(sql);
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		return f;
+	}
+	
+}

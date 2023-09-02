@@ -1,0 +1,27 @@
+
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Admin: Home</title>
+<%@include file="allCss.jsp"%>
+</head>
+<body>
+	<%@include file="navbar.jsp"%>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="card">
+					<div class="card-body">
+					<i class="fa-solid fa-square-plus"></i><br>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

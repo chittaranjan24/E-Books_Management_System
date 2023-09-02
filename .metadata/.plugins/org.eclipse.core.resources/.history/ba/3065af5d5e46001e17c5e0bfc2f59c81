@@ -1,0 +1,13 @@
+package com.entity;
+
+public class Cart {
+	
+	private int cid;
+	private int bid;
+	private int userId;
+	private String bookName;
+	private String author;
+	private Double price;
+	private Double totalPrice;
+
+}

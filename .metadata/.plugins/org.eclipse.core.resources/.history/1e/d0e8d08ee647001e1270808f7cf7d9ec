@@ -1,0 +1,65 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Setting</title>
+<%@include file="all_component/allCss.jsp"%>
+
+<style type="text/css">
+a{
+text-decoration: none;
+color:black;
+}
+a:hover{
+text-decoration :none;
+color:red;
+}
+</style>
+
+</head>
+<body style="background-color: #f0f1f2;">
+	<%@include file="all_component/navbar.jsp"%>
+
+	<div class="comtainer">
+		<h3 class="text-center">Hello, Chitta</h3>
+		<div class="row p-5">
+			<div class="col-md-6 mt-1">
+				<a href="">
+					<div class="card">
+						<div class="card-body text-center">
+							<div class="text-primary"><i class="fas fa-book-open fa-3x"></i></div>
+							<h3>Sell Old Book</h3>
+						</div>
+					</div>
+				</a>
+			</div>
+			
+			<div class="col-md-4 mt-1">
+				<a href="">
+					<div class="card">
+						<div class="card-body text-center">
+							<div class="text-primary"><i class="fa-solid fa-user-pen fa-3x"></i></div>
+							<h4>Login & Security (Edit Profile)</h4>
+						</div>
+					</div>
+				</a>
+			</div>
+			
+			<div class="col-md-6 mt-3">
+				<a href="">
+					<div class="card">
+						<div class="card-body text-center">
+							<div class="text-warning"><i class="fa-solid fa-location-dot fa-3x"></i></div>
+							<h4>Your Address</h4>
+						</div>
+					</div>
+				</a>
+			</div>
+			
+		</div>
+	</div>
+
+</body>
+</html>

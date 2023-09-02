@@ -1,0 +1,12 @@
+package com.entity;
+
+public class Book_Order {
+	
+	private int id;
+	private String username;
+	private String email;
+	private String phno;
+	private String fulladd;
+	private String paymentType;
+
+}
